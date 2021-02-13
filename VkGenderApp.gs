@@ -149,7 +149,7 @@ class VkGenderApp {
             }
             reportSynonyms = unique(reportSynonyms);
             if ((reportSynonyms.length > +0) && (reportSynonyms.join().length < 1000)) {
-              result.nameSynonyms = reportSynonyms.join();
+              result.nameSynonyms = reportSynonyms.join(', ');
             }
           }
         }
